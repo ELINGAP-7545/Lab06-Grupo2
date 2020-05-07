@@ -1,3 +1,4 @@
+# gRUPO 2
 # lab06 Diseño de banco de Registro
 
 # Introducción
