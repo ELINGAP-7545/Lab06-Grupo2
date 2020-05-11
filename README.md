@@ -39,6 +39,7 @@ Entregables:
  
  
 # SOLUCIÓN 
+En el siguiente laboratorio veremos como podemos ralizar la visualizacio de un banco de registros el cual cuenta con 4 bits de salida y 2 de entrada, con este banco de registros el cual visualizaremos por medio de quartus podremos entender el comportamiento  
 
 ## Documentación
 
