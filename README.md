@@ -48,8 +48,11 @@ Muchos circuitos digitales necesitan inicializarse antes de comenzar a trabajar 
 
 Para lograr esto necesitamos un circuito de inicialización que nos genere una señal de relog la cual cada 50000 giros por segundo genera un flanco de subida automatico durante todo el funcionamiento de la maquina. Al llegar el primer flanco de reloj, se captura el 1 y se saca por su salida, generando el flanco de subida para realizar la inicialización. Para el resto de ciclos de reloj esta señal siempre estará a 1
 
+## Archivo testbench
 
+## Vídeo de la implementación.
 
+## Código HDL 
 
 **Opcional. Da mas puntos:**
 
