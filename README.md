@@ -50,7 +50,9 @@ Para lograr esto necesitamos un circuito de inicialización que nos genere una s
 
 ## Pre cargar el banco de registro con información: 
 
-para este proceso debemos sintetizar nuestro archivo usando $readmenh (este archivo es una extensión las cual nos da a entender que se deberá leer el archivo menh con el cual a su vez nos llevara a el archivo que se encuentra en el src del baoratorio 6 como reg16.men )
+para este proceso debemos sintetizar nuestro archivo usando $readmenh (este archivo es una extensión las cual nos da a entender que se deberá leer el archivo menh con el cual a su vez nos llevara a el archivo que se encuentra en el src del baoratorio 6 como reg16.men).
+
+Al cargar el archivo $readmenh veremos que nuestros leds se encenderán y visualizaremos que nuestro proceso funciona correctamente
 
 
 
