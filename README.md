@@ -43,7 +43,7 @@ En el siguiente laboratorio veremos como podemos ralizar la visualizacio de un b
 
 Muchos circuitos digitales necesitan inicializarse antes de comenzar a trabajar normalmente. Su funcionamiento se divide en un estado de arranque, donde se inicializan los valores de los registros y un estado de régimen permanente donde se realiza la función para la que han sido diseñados.
 
-ara lograr esto necesitamos un circuito de inicialización que nos genere una señal de relog la cual cada 50000 giros por segundo genera un flanco de subida automatico durante todo el funcionamiento de la maquina. Al llegar el primer flanco de reloj, se captura el 1 y se saca por su salida, generando el flanco de subida para realizar la inicialización. Para el resto de ciclos de reloj esta señal siempre estará a 1
+Para lograr esto necesitamos un circuito de inicialización que nos genere una señal de relog la cual cada 50000 giros por segundo genera un flanco de subida automatico durante todo el funcionamiento de la maquina. Al llegar el primer flanco de reloj, se captura el 1 y se saca por su salida, generando el flanco de subida para realizar la inicialización. Para el resto de ciclos de reloj esta señal siempre estará a 1
 
 
 **Opcional. Da mas puntos:**
