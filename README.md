@@ -45,7 +45,7 @@ Entregables:
  ![banco de registros](https://user-images.githubusercontent.com/62779527/81987797-010cbd80-9600-11ea-97ec-07048d09efbd.PNG)
 
 
-En el siguiente laboratorio veremos como podemos ralizar la visualizacio de un banco de registros el cual cuenta con 4 bits de salida y 2 de entrada, con este banco de registros el cual visualizaremos por medio de quartus podremos entender el comportamiento del banco de registros.
+En el siguiente laboratorio veremos como podemos ralizar la visualizacion de un banco de registros el cual cuenta con 4 bits de salida y 2 de entrada, con este banco de registros el cual visualizaremos por medio de quartus podremos entender el comportamiento del banco de registros.
 
 Muchos circuitos digitales necesitan inicializarse antes de comenzar a trabajar normalmente. Su funcionamiento se divide en un estado de arranque, donde se inicializan los valores de los registros y un estado de régimen permanente donde se realiza la función para la que han sido diseñados.
 
@@ -61,7 +61,9 @@ Para lograr esto necesitamos un circuito de inicialización que nos genere una s
 
 ## Pre cargar el banco de registro con información: 
 
-para este proceso debemos sintetizar nuestro archivo usando $readmenh (este archivo es una extensión las cual nos da a entender que se deberá leer el archivo menh con el cual a su vez nos llevara a el archivo que se encuentra en el src del baoratorio 6 como reg16.men).
+para este proceso debemos sintetizar nuestro archivo usando $readmenh para el archivo $readmen(este archivo es una extensión la cual nos da a entender que se deberá leer el archivo $readmenh con el cual a su vez nos llevara a el archivo que se encuentra en el src del baoratorio 6 como Reg16.men).
+
+ Existen 2 tipos de archivos el $readmend el cual la informacion es tomada enbinario y el  $readmenh el cual es tomado en hexadecimal. 
 
 Al cargar el archivo $readmenh veremos que nuestros leds se encenderán y visualizaremos que nuestro codigo funciona correctamente
 
