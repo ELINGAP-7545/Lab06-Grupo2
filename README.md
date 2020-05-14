@@ -54,7 +54,7 @@ Para lograr esto necesitamos un circuito de inicialización que nos genere una s
 
 ## Código HDL 
 
-**Opcional. Da mas puntos:**
+## **Opcional. Da mas puntos:**
 
 ## Pre cargar el banco de registro con información: 
 
