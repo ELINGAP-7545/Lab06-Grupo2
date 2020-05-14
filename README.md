@@ -48,8 +48,9 @@ Para lograr esto necesitamos un circuito de inicialización que nos genere una s
 
 **Opcional. Da mas puntos:**
 
-##Pre cargar el banco de registro con información: para este proseso debemos sintetizar nuentro archivo usando $readmenh (este archivo es una estencion las cual nos da a enterder que se debera leer el archivo menh con el cual a su ves nos llevara a el archivo que se encuentra en el src del baoratorio 6 como reg16.men )
+## Pre cargar el banco de registro con información: 
 
+para este proceso debemos sintetizar nuestro archivo usando $readmenh (este archivo es una extensión las cual nos da a entender que se deberá leer el archivo menh con el cual a su vez nos llevara a el archivo que se encuentra en el src del baoratorio 6 como reg16.men )
 
 
 
