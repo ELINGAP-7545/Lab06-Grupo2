@@ -39,7 +39,21 @@ Entregables:
  
  
 # SOLUCIÓN 
-En el siguiente laboratorio veremos como podemos ralizar la visualizacio de un banco de registros el cual cuenta con 4 bits de salida y 2 de entrada, con este banco de registros el cual visualizaremos por medio de quartus podremos entender el comportamiento  
+En el siguiente laboratorio veremos como podemos ralizar la visualizacio de un banco de registros el cual cuenta con 4 bits de salida y 2 de entrada, con este banco de registros el cual visualizaremos por medio de quartus podremos entender el comportamiento del banco de registros.
+
+Muchos circuitos digitales necesitan inicializarse antes de comenzar a trabajar normalmente. Su funcionamiento se divide en un estado de arranque, donde se inicializan los valores de los registros y un estado de régimen permanente donde se realiza la función para la que han sido diseñados.
+
+ara lograr esto necesitamos un circuito de inicialización que nos genere una señal de relog la cual cada 50000 giros por segundo genera un flanco de subida automatico durante todo el funcionamiento de la maquina. Al llegar el primer flanco de reloj, se captura el 1 y se saca por su salida, generando el flanco de subida para realizar la inicialización. Para el resto de ciclos de reloj esta señal siempre estará a 1
+
+
+**Opcional. Da mas puntos:**
+
+##Pre cargar el banco de registro con información: para este proseso debemos sintetizar nuentro archivo usando $readmenh (este archivo es una estencion las cual nos da a enterder que se debera leer el archivo menh con el cual a su ves nos llevara a el archivo que se encuentra en el src del baoratorio 6 como reg16.men )
+
+
+
+
+
 
 ## Documentación
 
