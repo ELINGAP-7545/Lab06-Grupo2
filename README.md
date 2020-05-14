@@ -41,6 +41,9 @@ Entregables:
 # SOLUCIÓN 
 
  ## Diseño de banco de Registro:
+ 
+ ![banco de registros](https://user-images.githubusercontent.com/62779527/81987797-010cbd80-9600-11ea-97ec-07048d09efbd.PNG)
+
 
 En el siguiente laboratorio veremos como podemos ralizar la visualizacio de un banco de registros el cual cuenta con 4 bits de salida y 2 de entrada, con este banco de registros el cual visualizaremos por medio de quartus podremos entender el comportamiento del banco de registros.
 
