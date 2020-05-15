@@ -45,11 +45,18 @@ Entregables:
  ![banco de registros](https://user-images.githubusercontent.com/62779527/81987797-010cbd80-9600-11ea-97ec-07048d09efbd.PNG)
 
 
-En el siguiente laboratorio veremos como podemos ralizar la visualizacion de un banco de registros el cual cuenta con 4 bits de salida y 2 de entrada, con este banco de registros el cual visualizaremos por medio de quartus podremos entender el comportamiento del banco de registros.
+En el siguiente laboratorio veremos como podemos realizar la visualización de un banco de registros el cual cuenta con 4 bits de salida y 2 de entrada, con este banco de registros el cual visualizaremos por medio de quartus podremos entender el comportamiento del banco de registros.
 
 Muchos circuitos digitales necesitan inicializarse antes de comenzar a trabajar normalmente. Su funcionamiento se divide en un estado de arranque, donde se inicializan los valores de los registros y un estado de régimen permanente donde se realiza la función para la que han sido diseñados.
 
-Para lograr esto necesitamos un circuito de inicialización que nos genere una señal de relog la cual cada 50000 giros por segundo genera un flanco de subida automatico durante todo el funcionamiento de la maquina. Al llegar el primer flanco de reloj, se captura el 1 y se saca por su salida, generando el flanco de subida para realizar la inicialización. Para el resto de ciclos de reloj esta señal siempre estará a 1
+Para lograr esto necesitamos un circuito de inicialización que nos genere una señal de reloj la cual cada 50000 giros por segundo (este valor del reloj es comprendido solo para la implementación en labsland) genera un flanco de subida automático durante todo el funcionamiento de la máquina. Al llegar el primer flanco de reloj, se captura el 1 y se saca por su salida, generando el flanco de subida para realizar la inicialización. Para el resto de ciclos de reloj esta señal siempre estará a 1
+
+
+![rst](https://user-images.githubusercontent.com/62779527/81989029-1a166e00-9602-11ea-8e40-fe1c8e523a5d.PNG)
+
+
+
+
 
 ## Archivo testbench
 
