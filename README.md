@@ -101,6 +101,7 @@ En esta imagen vizualizamos en el display 1 el registro de la señal de control 
 
 ![rst](https://github.com/ELINGAP-7545/Lab06-Grupo2/blob/master/Dato%20cargado%20a%20la%20se%C3%B1al%20RegWrite.JPG)
 
+![rst](https://github.com/ELINGAP-7545/Lab06-Grupo2/blob/master/Captura%20Banco%20de%20registro%20fpga%20valor%2000.JPG)
 
 # Señal de rst, Los registros en un valor conocido.
 
