@@ -179,6 +179,8 @@ https://drive.google.com/file/d/1WV8mY319Rvo43PHncgysNZCxiknB9KUD/view?usp=shari
 
 ## codigo 
 
+en este paso podemos 
+
 ```verilog
 module BancoRegistro #(      		 //   #( Parametros
          parameter BIT_ADDR = 2,  //   BIT_ADDR Número de bit para la dirección  
