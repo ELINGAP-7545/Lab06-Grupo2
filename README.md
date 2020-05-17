@@ -122,6 +122,11 @@ En esta imagen vizualizamos en el display 1 el registro de la señal de control 
 ![rst](https://github.com/ELINGAP-7545/Lab06-Grupo2/blob/master/Dato%20cargado%20a%20la%20se%C3%B1al%20RegWrite.JPG)
 
 
+# Señal de rst, Los registros en un valor conocido.
+
+En esta imagen visualizamos la activación del botón "B1" como señal "rst" y coloca los registros en un valor definido por el usuario, al igual se activa el display 3 para visualizar el dato entregado por el usuario.
+
+![rst](https://github.com/ELINGAP-7545/Lab06-Grupo2/blob/master/Se%C3%B1al%20rst%20con%20dato.JPG)
 
 ## Archivo `testbench` el cuál debe simular la escritura de 16 registros y 8 lecturas mas el rst, el resultado de la simulación debe visualizarse en diagrama de tiempo.
 
