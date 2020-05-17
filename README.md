@@ -88,7 +88,7 @@ wire [1:0] addrRa;
 
 wire [1:0] addrRb;
 
-wire RegWrite;  las salidas los cables 
+wire RegWrite; Este cable, su estado normal es 0, se coloca en estado 1 para autorizar escribir el dato en la dirección indicada. 
 
 También realizar sus respectivas asignaciones
 
