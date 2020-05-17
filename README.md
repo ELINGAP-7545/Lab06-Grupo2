@@ -90,17 +90,17 @@ wire [1:0] addrRb; Este cable, nos muestra en el display 2 el dato requerido por
 
 wire RegWrite; Este cable, su estado normal es 0, se coloca en estado 1 para autorizar escribir el dato en la dirección indicada. 
 
-También realizar sus respectivas asignaciones
+También realizar sus respectivas asignaciones, teniendo en cuenta que nuestra FPGA virtual cuenta con diez interruptores de entrada así:
 
-assign addrW = V_SW[5:4];
+assign addrW = V_SW[5:4]; Estos interruptores indican la posición de la memoria para el almacenamiento.
 
-assign datW = V_SW[3:0];
+assign datW = V_SW[3:0]; Estos cuatro interruptores indican el dato que deseamos guardar en memoria.
 
-assign addrRa = V_SW[9:8];
+assign addrRa = V_SW[9:8]; Estos dos interruptores indican una dirección de la memoria para mostrar por el display 1 lo almacenado allí. 
 
-assign addrRb = V_SW[7:6];
+assign addrRb = V_SW[7:6]; Estos dos interruptores indican una dirección de la memoria para mostrar por el display 2 lo almacenado allí.
 
-assign RegWrite = V_BT[0];
+assign RegWrite = V_BT[0]; Este botón debe ser opturado por el usuario para el cambio de estado y así realizar el proceso de cargue a la memoria.
 
 Determinado la posición y la cantidad de switch a utilizar para su respectivo ingreso de datos
 
