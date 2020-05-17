@@ -128,6 +128,9 @@ En esta imagen visualizamos la activación del botón "B1" como señal "rst" y c
 
 ![rst](https://github.com/ELINGAP-7545/Lab06-Grupo2/blob/master/Se%C3%B1al%20rst%20con%20dato.JPG)
 
+Estados activos de Memoria y señal rst con dato.
+![rst](https://github.com/ELINGAP-7545/Lab06-Grupo2/blob/master/Se%C3%B1al%20rst%20activa%20con%20dato.JPG)
+
 ## Archivo `testbench` el cuál debe simular la escritura de 16 registros y 8 lecturas mas el rst, el resultado de la simulación debe visualizarse en diagrama de tiempo.
 
 ## Vídeo de la implementación.
