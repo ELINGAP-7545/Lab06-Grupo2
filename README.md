@@ -179,7 +179,7 @@ https://drive.google.com/file/d/1WV8mY319Rvo43PHncgysNZCxiknB9KUD/view?usp=shari
 
 ## codigo 
 
-en este paso podemos visualizar el codigo que utilizaremos 
+en este paso podemos visualizar el codigo que utilizaremos para 
 
 ```verilog
 module BancoRegistro #(      		 //   #( Parametros
