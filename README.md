@@ -113,6 +113,7 @@ Estados activos de Memoria y señal rst con dato.
 
 ## Archivo `testbench` el cuál debe simular la escritura de 4 registros y 2 lecturas mas el rst, el resultado de la simulación debe visualizarse en diagrama de tiempo.
 
+![rst](https://github.com/ELINGAP-7545/Lab06-Grupo2/blob/master/testbench%20banco%20de%20registros.JPG?raw=true)
 
 ## Vídeo de la implementación.
 
