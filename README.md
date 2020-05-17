@@ -101,11 +101,6 @@ En esta imagen vizualizamos en el display 1 el registro de la señal de control 
 
 ![rst](https://github.com/ELINGAP-7545/Lab06-Grupo2/blob/master/Dato%20cargado%20a%20la%20se%C3%B1al%20RegWrite.JPG)
 
-# EJEMPLO
-
-simulacion de la fpga en 00
-
-![rst](https://github.com/ELINGAP-7545/Lab06-Grupo2/blob/master/Captura%20Banco%20de%20registro%20fpga%20valor%2000.JPG?raw=true)
 
 # Señal de rst, Los registros en un valor conocido.
 
@@ -168,6 +163,7 @@ module TestBench;
       
 endmodule
 ```
+En el siguiente código podemos ver la visualización del testbench y funcionamiento en el programa quartus donde podemos visualizar el comportamiento de los bits y sus flancos para cada una de las instanciaciones en binario 
 
 ![rst](https://github.com/ELINGAP-7545/Lab06-Grupo2/blob/master/testbench%20banco%20de%20registros.JPG?raw=true)
 
@@ -180,24 +176,28 @@ https://drive.google.com/file/d/1WV8mY319Rvo43PHncgysNZCxiknB9KUD/view?usp=shari
 
 ## Código HDL de la solución.
 
+## codigo 
+
 ```verilog
 module BancoRegistro #(      		 //   #( Parametros
-         parameter BIT_ADDR = 2,  //   BIT_ADDR Número de bit para la dirección
+         parameter BIT_ADDR = 2,  //   BIT_ADDR Número de bit para la dirección  
          parameter BIT_DATO = 4)  //  BIT_DATO  Número de bit para el dato
 //         parameter   RegFILE= "src/Reg16.men")
 	(
-    input wire [9:0] V_SW,
-    output [6:0] G_HEX0,
-    output [6:0] G_HEX1,
-	input [1:0] V_BT,  //RegWrite
-    input G_CLOCK_50);  //clk
+    input wire [9:0] V_SW, //interruptores los cuales se manejan de entre [9:0] 
+    output [6:0] G_HEX0,   //display 1
+    output [6:0] G_HEX1,   //display 2
+	input [1:0] V_BT,  //RegWrite y reset 
+    input G_CLOCK_50);  //clk entrada de reloj
 //    input rst
 
-wire [1:0] addrW;
-wire [3:0] datW;
-wire [1:0] addrRa;
-wire [1:0] addrRb;
-wire RegWrite;
+wire [1:0] addrW;  //direccion de memoria para guardar dato
+wire [3:0] datW;   //dato a guardar 
+wire [1:0] addrRa; //interruptor para solicitar posicion de memoria y su contenido 
+wire [1:0] addrRb; 
+wire RegWrite; //boton para escribir en memoria 
+
+// configuracion de los interruptores y botones 
 
 assign addrW = V_SW[5:4];
 assign datW = V_SW[3:0];
@@ -207,7 +207,9 @@ assign RegWrite = V_BT[0];
 
 // La cantdiad de registros es igual a: 
 localparam NREG = 2 ** BIT_ADDR;
-  
+
+// en esta parte obsevamos que el 2 lo elevamos a la potencia que se encuentra entre el (bit_addr) el cual es 2 y por consiguiente queda de 4 bits 
+
 //configiración del banco de registro 
 reg [BIT_DATO-1:0] breg [NREG-1:0];
 
@@ -221,7 +223,7 @@ BCDtoSSeg D1(.num(datOutRa), .sseg(G_HEX0));
 BCDtoSSeg D2(.num(datOutRb), .sseg(G_HEX1));
 
 always @(posedge G_CLOCK_50) begin
-	if (RegWrite == 1)
+	if (RegWrite == 1) // si el boton regwrite no se encuentra en 1 no podemos escribir ni lee el dato lo cual tambien sucede en el boton de reset el cual es un valor fijo el cual le daremos nosotros 
      breg[addrW] <= datW;
   end
 
