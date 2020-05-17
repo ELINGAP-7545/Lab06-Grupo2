@@ -84,9 +84,9 @@ Se realizó un análisis del laboratorio de Banco de Registros de una manera má
 
 wire [3:0] datW; Este cable, tiene el dato ingresado que se desea grabar en la memoria.
 
-wire [1:0] addrRa; Este cable, nos muestra el dato almacenado en la memoria por el display 1
+wire [1:0] addrRa; Este cable, nos muestra en el display 1 el dato requerido por el usuario de una de las posiciones de la memoria.
 
-wire [1:0] addrRb;
+wire [1:0] addrRb; Este cable, nos muestra en el display 2 el dato requerido por el usuario de una de las posiciones de la memoria.
 
 wire RegWrite; Este cable, su estado normal es 0, se coloca en estado 1 para autorizar escribir el dato en la dirección indicada. 
 
