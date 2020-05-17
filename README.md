@@ -104,7 +104,7 @@ assign RegWrite = V_BT[0];
 
 Determinado la posición y la cantidad de switch a utilizar para su respectivo ingreso de datos
 
-
+![rst](https://github.com/ELINGAP-7545/Lab06-Grupo2/blob/master/Configuraci%C3%B3n%20Banco%20Registros.JPG)
 
 ## Archivo `testbench` el cuál debe simular la escritura de 16 registros y 8 lecturas mas el rst, el resultado de la simulación debe visualizarse en diagrama de tiempo.
 
