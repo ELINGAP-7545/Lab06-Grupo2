@@ -82,9 +82,9 @@ Al cargar el archivo $readmenh veremos que nuestros leds se encenderán y visual
 
 Se realizó un análisis del laboratorio de Banco de Registros de una manera más clara con ayuda del docente, explicando cómo funcionaría el programa o código en las labsland definiendo las entradas
 
-wire [3:0] datW;
+wire [3:0] datW; Este cable, tiene el dato ingresado que se desea grabar en la memoria.
 
-wire [1:0] addrRa;
+wire [1:0] addrRa; Este cable, nos muestra el dato almacenado en la memoria por el display 1
 
 wire [1:0] addrRb;
 
