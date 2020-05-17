@@ -58,26 +58,6 @@ Para lograr esto necesitamos un circuito de inicialización que nos genere una s
 
 
 
-## Archivo testbench
-
-## Vídeo de la implementación.
-
-## Código HDL 
-
-## **Opcional. Da mas puntos:**
-
-## Pre cargar el banco de registro con información: 
-
-para este proceso debemos sintetizar nuestro archivo usando $readmenh para el archivo $readmenh(este archivo es una extensión la cual nos da a entender que se deberá leer el archivo $readmenh con el cual a su vez nos llevara a el archivo que se encuentra en el src del laboratorio 6 como Reg16.men).
-
- Existen 2 tipos de archivos el $readmenb: el cual la informacion es tomada en binario y el $readmenh el cual es tomado en hexadecimal. 
-
-Al cargar el archivo $readmenh veremos que nuestros leds se encenderán y visualizaremos que nuestro código funciona correctamente.
-
-
-
-
-
 ## Documentación
 
 Se realizó un análisis del laboratorio de Banco de Registros de una manera más clara con ayuda del docente, explicando cómo funcionaría el programa o código en las labsland definiendo las entradas
