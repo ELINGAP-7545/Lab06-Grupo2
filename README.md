@@ -168,6 +168,11 @@ endmodule
 
 ## Vídeo de la implementación.
 
+acontinuacin adjunto link del video donde explicamos el funcinamiento y visualizacion del banco de registro
+
+
+https://drive.google.com/file/d/1WV8mY319Rvo43PHncgysNZCxiknB9KUD/view?usp=sharing
+
 ## Código HDL de la solución.
 
 ```verilog
