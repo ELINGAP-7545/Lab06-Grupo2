@@ -179,7 +179,7 @@ https://drive.google.com/file/d/1WV8mY319Rvo43PHncgysNZCxiknB9KUD/view?usp=shari
 
 ## codigo 
 
-en este paso podemos visualizar el codigo que utilizaremos para poder realiar nuentra simulacion en labslan el cual nos permitira 
+en este paso podemos visualizar el codigo que utilizaremos para poder realiar nuentra simulacion en labslan el cual nos permitira realizar la sintetizacion compilacion y visualizacion en nuedros  
 
 ```verilog
 module BancoRegistro #(      		 //   #( Parametros
