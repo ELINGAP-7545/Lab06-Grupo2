@@ -113,6 +113,44 @@ Estados activos de Memoria y señal rst con dato.
 
 ## Archivo `testbench` el cuál debe simular la escritura de 4 registros y 2 lecturas mas el rst, el resultado de la simulación debe visualizarse en diagrama de tiempo.
 
+```verilog
+timescale 1ns / 1ps
+module testbench;
+
+	// Inputs
+	reg [15:0] num;
+	reg clk2;
+	reg rst;
+
+	// Outputs
+	wire [0:6] sseg;
+	wire [3:0] an;
+
+	// Instantiate the Unit Under Test (UUT)
+	display uut (
+	//	.num(num), 
+		.clk(clk2), 
+		.sseg(sseg), 
+		.an(an), 
+		.rst(rst)
+	);
+
+	initial begin
+		// Initialize Inputs
+		clk2= 0;
+		rst = 1;
+		#10 rst =0;
+		
+		num = 16'h4321;
+        
+
+	end
+      
+
+	always #1 clk2 = ~clk2;
+	
+endmodule
+```
 ![rst](https://github.com/ELINGAP-7545/Lab06-Grupo2/blob/master/testbench%20banco%20de%20registros.JPG?raw=true)
 
 ## Vídeo de la implementación.
