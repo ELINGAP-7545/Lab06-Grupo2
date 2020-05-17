@@ -68,11 +68,11 @@ Para lograr esto necesitamos un circuito de inicialización que nos genere una s
 
 ## Pre cargar el banco de registro con información: 
 
-para este proceso debemos sintetizar nuestro archivo usando $readmenh para el archivo $readmen(este archivo es una extensión la cual nos da a entender que se deberá leer el archivo $readmenh con el cual a su vez nos llevara a el archivo que se encuentra en el src del baoratorio 6 como Reg16.men).
+para este proceso debemos sintetizar nuestro archivo usando $readmenh para el archivo $readmenh(este archivo es una extensión la cual nos da a entender que se deberá leer el archivo $readmenh con el cual a su vez nos llevara a el archivo que se encuentra en el src del laboratorio 6 como Reg16.men).
 
- Existen 2 tipos de archivos el $readmend el cual la informacion es tomada enbinario y el  $readmenh el cual es tomado en hexadecimal. 
+ Existen 2 tipos de archivos el $readmenb: el cual la informacion es tomada en binario y el $readmenh el cual es tomado en hexadecimal. 
 
-Al cargar el archivo $readmenh veremos que nuestros leds se encenderán y visualizaremos que nuestro codigo funciona correctamente
+Al cargar el archivo $readmenh veremos que nuestros leds se encenderán y visualizaremos que nuestro código funciona correctamente.
 
 
 
@@ -103,6 +103,13 @@ assign addrRb = V_SW[7:6]; Estos dos interruptores indican una dirección de la 
 assign RegWrite = V_BT[0]; Este botón debe ser opturado por el usuario para el cambio de estado y así realizar el proceso de cargue a la memoria.
 
 Determinado la posición y la cantidad de switch a utilizar para su respectivo ingreso de datos
+
+![rst](https://github.com/ELINGAP-7545/Lab06-Grupo2/blob/master/Configuraci%C3%B3n%20Banco%20Registros.JPG)
+
+
+# Escritura de 1 registro, acorde a la señal de control Regwrite
+
+En esta imagen visualizamos la activación del botón "B0" en su estado "1" para cargar el dato "0011" en la dirección "00" de la memoria de nuestro banco de registros.
 
 ![rst](https://github.com/ELINGAP-7545/Lab06-Grupo2/blob/master/Configuraci%C3%B3n%20Banco%20Registros.JPG)
 
