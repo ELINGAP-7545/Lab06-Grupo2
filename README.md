@@ -169,3 +169,55 @@ endmodule
 ## Vídeo de la implementación.
 
 ## Código HDL de la solución.
+
+```verilog
+module BancoRegistro #(      		 //   #( Parametros
+         parameter BIT_ADDR = 2,  //   BIT_ADDR Número de bit para la dirección
+         parameter BIT_DATO = 4)  //  BIT_DATO  Número de bit para el dato
+//         parameter   RegFILE= "src/Reg16.men")
+	(
+    input wire [9:0] V_SW,
+    output [6:0] G_HEX0,
+    output [6:0] G_HEX1,
+	input [1:0] V_BT,  //RegWrite
+    input G_CLOCK_50);  //clk
+//    input rst
+
+wire [1:0] addrW;
+wire [3:0] datW;
+wire [1:0] addrRa;
+wire [1:0] addrRb;
+wire RegWrite;
+
+assign addrW = V_SW[5:4];
+assign datW = V_SW[3:0];
+assign addrRa = V_SW[9:8];
+assign addrRb = V_SW[7:6];
+assign RegWrite = V_BT[0];
+
+// La cantdiad de registros es igual a: 
+localparam NREG = 2 ** BIT_ADDR;
+  
+//configiración del banco de registro 
+reg [BIT_DATO-1:0] breg [NREG-1:0];
+
+wire [BIT_DATO-1:0] datOutRa;
+wire [BIT_DATO-1:0] datOutRb;
+
+assign  datOutRa = breg[addrRa];
+assign  datOutRb = breg[addrRb];
+
+BCDtoSSeg D1(.num(datOutRa), .sseg(G_HEX0));
+BCDtoSSeg D2(.num(datOutRb), .sseg(G_HEX1));
+
+always @(posedge G_CLOCK_50) begin
+	if (RegWrite == 1)
+     breg[addrW] <= datW;
+  end
+
+initial begin
+//	$readmemh(RegFILE, breg);
+end
+
+endmodule
+```
