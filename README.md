@@ -81,16 +81,27 @@ Al cargar el archivo $readmenh veremos que nuestros leds se encenderán y visual
 ## Documentación
 
 Se realizó un análisis del laboratorio de Banco de Registros de una manera más clara con ayuda del docente, explicando cómo funcionaría el programa o código en las labsland definiendo las entradas
+
 wire [3:0] datW;
+
 wire [1:0] addrRa;
+
 wire [1:0] addrRb;
+
 wire RegWrite;  las salidas los cables 
- También realizar sus respectivas asignaciones 
+
+También realizar sus respectivas asignaciones
+
 assign addrW = V_SW[5:4];
+
 assign datW = V_SW[3:0];
+
 assign addrRa = V_SW[9:8];
+
 assign addrRb = V_SW[7:6];
+
 assign RegWrite = V_BT[0];
+
 Determinado la posición y la cantidad de switch a utilizar para su respectivo ingreso de datos
 
 
