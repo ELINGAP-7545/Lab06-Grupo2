@@ -179,7 +179,7 @@ https://drive.google.com/file/d/1WV8mY319Rvo43PHncgysNZCxiknB9KUD/view?usp=shari
 
 ## codigo 
 
-en este paso podemos visualizar el codigo que utilizaremos para poder realiar nuentra simulacion en labslan el cual nos permitira realizar la sintetizacion compilacion y visualizacion en nuestros display y fpga  virtuales 
+En este paso podemos visualizar el código que utilizaremos para poder realizar nuestra simulación en labslan el cual nos permitirá realizar la compilación, sintetizar y visualización en nuestros display y fpga  virtuales
 
 ```verilog
 module BancoRegistro #(      		 //   #( Parametros
