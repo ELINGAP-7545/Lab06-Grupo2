@@ -113,7 +113,8 @@ Estados activos de Memoria y señal rst con dato.
 
 ## Archivo `testbench` el cuál debe simular la escritura de 4 registros y 2 lecturas mas el rst, el resultado de la simulación debe visualizarse en diagrama de tiempo.
 
-``` module TestBench;
+```verilog
+module TestBench;
 
 	// Inputs
 	reg [3:0] addrRa;
