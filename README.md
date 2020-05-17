@@ -107,6 +107,8 @@ Determinado la posición y la cantidad de switch a utilizar para su respectivo i
 ![rst](https://github.com/ELINGAP-7545/Lab06-Grupo2/blob/master/Configuraci%C3%B3n%20Banco%20Registros.JPG)
 
 
+
+
 # Escritura de 1 registro, acorde a la señal de control Regwrite
 
 En esta imagen visualizamos la activación del botón "B0" en su estado "1" para cargar el dato "0011" en la dirección "00" de la memoria de nuestro banco de registros.
@@ -114,9 +116,11 @@ En esta imagen visualizamos la activación del botón "B0" en su estado "1" para
 ![rst](https://github.com/ELINGAP-7545/Lab06-Grupo2/blob/master/Se%C3%B1al%20de%20Control%20Reg%20Write.JPG)
 
 
+
 En esta imagen vizualizamos en el display 1 el registro de la señal de control Regwrite.
 
-![rst](https://github.com/ELINGAP-7545/Lab06-Grupo2/blob/master/Se%C3%B1al%20de%20Control%20Reg%20Write.JPG)
+![rst](https://github.com/ELINGAP-7545/Lab06-Grupo2/blob/master/Dato%20cargado%20a%20la%20se%C3%B1al%20RegWrite.JPG)
+
 
 
 ## Archivo `testbench` el cuál debe simular la escritura de 16 registros y 8 lecturas mas el rst, el resultado de la simulación debe visualizarse en diagrama de tiempo.
